@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     size_t echoStringLen;             // Length of string to echo.
     int bytesRcvd, totalBytesRcvd;    // Bytes read in single recv() and total bytes read.
 
-    if((argc < 3) or (4 < argc)) {  // Test for correct number of arguments.
+    if(argc < 3 or 4 < argc) {  // Test for correct number of arguments.
         fprintf(stderr, "Usage: %s <Server IP> <Echo Word> [<Echo Port>]\n", argv[0]);
         exit(1);
     }
